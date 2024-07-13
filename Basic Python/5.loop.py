@@ -82,3 +82,93 @@ for x in fruits:
     pass
   
   print("After If condition `x`=",x)        ## apple, banana, cherry, blackberry, watermelon, pineapple
+
+
+
+##! While Loop
+"""
+        while condition:
+            -- code --
+            
+"""
+
+
+i = 1
+
+while i<=5:
+   print("value = ", i)
+   i+=1
+
+
+
+
+i = 1
+while i < 6:
+    print(i)       ## 1, 2, 3
+    if i == 3:
+        break
+    i += 1
+
+
+
+
+i = 0 
+
+    # i = 0, 1, 2, 3, 4, 5
+while i < 6:
+    i += 1       # 1, 2, 3, 4, 5, 6
+    if i == 3:
+        continue
+    print(i)      ## 1, 2, 4, 5, 6
+
+
+
+
+i = 1
+    ## i = 1, 2, 3, 4, 5
+while i < 6:
+
+    print(i)    ##* Result = 1, 2, 3, 4, 5
+
+    i += 1      ## i = 2, 3, 4, 5, 6
+
+else:
+    print("i is no longer less than 6")
+
+# Result = 1, 2, 3, 4, 5, i is no longer less than 6
+
+
+
+             ##     99
+for i in range(10, 100, 20):  ## i = 101 30, 50, 70
+
+    for j in range(1, 5):        ## j = 1, 2, 3, 4
+
+        print(f"i = {i}, j = {j}")  
+
+
+"""
+Result =
+i = 10, j = 1
+i = 10, j = 2
+i = 10, j = 3
+i = 10, j = 4
+i = 30, j = 1
+i = 30, j = 2
+i = 30, j = 3
+i = 30, j = 4
+i = 50, j = 1
+i = 50, j = 2
+i = 50, j = 3
+i = 50, j = 4
+i = 70, j = 1
+i = 70, j = 2
+i = 70, j = 3
+i = 70, j = 4
+i = 90, j = 1
+i = 90, j = 2
+i = 90, j = 3
+i = 90, j = 4
+
+"""
+
