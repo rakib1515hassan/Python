@@ -1,16 +1,16 @@
 """! Syntex If Else
 
         if <condition>:
-            <code>
+            <statement(s)>
 
         elif <condition>:
-            <code>
+            <statement(s)>
 
         elif <condition>:
-            <code>
+            <statement(s)>
 
         else:
-            <code>
+            <statement(s)>
 """
 a = 10
 

@@ -1,7 +1,7 @@
 """##!Syntax Of Forloop
 
     for variable in sequence:
-        -- Extention --
+        -- statement(s) --
 
 """
 
@@ -87,8 +87,8 @@ for x in fruits:
 
 ##! While Loop
 """
-        while condition:
-            -- code --
+        while <condition>:
+            -- statement(s) --
             
 """
 
