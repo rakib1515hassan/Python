@@ -266,7 +266,7 @@ result1 = a.center(11)       ## result =  `---rakib---`
 """ #Memory Usage
 #*    Index  =        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |  9 | 10 |
 #!    String =        |   |   |   | r | a | k | i | b |   |    |    | 
-#*    Position =      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 
+#*    Length =        | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 
 """
 
 result2 = len(result1)       ## result =  `11`
@@ -278,7 +278,7 @@ result3 = a.center(16)       ## result =  `-----rakib----`
 """ #Memory Usage
 #*    Index  =        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9  | 10 | 11 | 12 | 13 | 14 | 15 |
 #!    String =        |   |   |   |   |   | r | a | k | i | b  |    |    |    |    |    |    |
-#*    Position =      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
+#*    Length =        | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 
 """
 
@@ -309,7 +309,7 @@ result1 = a.ljust(11)  # result = `rakib------`
 """ #Memory Usage
 #*    Index  =        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |  9 | 10 |
 #!    String =        | r | a | k | i | b |   |   |   |   |    |    | 
-#*    Position =      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 
+#*    Length =        | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 
 """
 
 result2 = len(result1)       ## result =  `11`
@@ -321,7 +321,7 @@ result3 = a.rjust(11)      ## result =  `------rakib`
 """ #Memory Usage
 #*    Index  =        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9  | 10 |
 #!    String =        |   |   |   |   |   |   | r | a | k |  i |  b | 
-#*    Position =      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+#*    Length =        | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
 
 """
 
