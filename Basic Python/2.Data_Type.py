@@ -1,3 +1,10 @@
+"""
+##!    Python DataTypes => Integer, Float, String, Boolean, None
+
+##!    Python Sequencial DataTypes => List, Tuple, Set, Dictionary
+
+"""
+
 a = 5        # intiger
 print("Type of a =", type(a))
 

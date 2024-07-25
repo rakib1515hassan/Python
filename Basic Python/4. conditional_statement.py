@@ -1,4 +1,4 @@
-"""! Syntex If Else
+"""##! Syntex If Else
 
         if <condition>:
             <statement(s)>
@@ -12,6 +12,8 @@
         else:
             <statement(s)>
 """
+
+##! Example 1:-
 a = 10
 
 if a==10:
@@ -21,7 +23,7 @@ else:
 
 
 
-
+##! Example 2:-
 name = input("Enter your name: ")
 
 if name=="rakib":
@@ -41,6 +43,8 @@ else:
 
 
 
+
+##! Example 3:-
 f_number = int(input("Given a first number: "))
 s_number = int(input("Given a second number: "))
 
@@ -77,6 +81,8 @@ print("My Result: ", result)
 
 
 
+
+##! Example 4:-
 import re
 cgpa = float(input("Give your CGPA:"))
 

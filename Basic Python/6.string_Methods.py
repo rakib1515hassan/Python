@@ -227,8 +227,23 @@ print(result1)
 print(result2)
 
 
+##? Method 7: ---------------( Swapcase Method )---------------
+"""
+Sentance এর Alphabet এর Case কে Swap করে দেয়, Capital Letter থাকলে Small Letter করে দেয়, 
+Small Letter থাকলে Capital Letter করে দেয়।
+"""  
 
-##? Method 7: ---------------( Find  Method )---------------
+a = "BAngLadEsh"
+b = "i livE iN dHakA"
+
+result1 = a.swapcase()     ## result =  `baNGlADeSH`
+result2 = b.swapcase()     ## result =  `I LIVe In DhAKa`
+
+print(result1)
+print(result2)
+
+
+##? Method 8: ---------------( Find  Method )---------------
 ## Full sentence হতে কোন character বা কোন word এর সাথে মিল পেলে সেই Index কে Return করে।
 
 a = "i live in Dhaka, It is the capital of Bangladesh. It is a small city"
@@ -255,7 +270,7 @@ print("`test` Position =",result6) ## `test` Position = -1
 
 
 
-##? Method 8: ---------------( Find  Method )---------------
+##? Method 9: ---------------( Find  Method )---------------
 a = "rakib"
 
 length = len(a)
@@ -298,7 +313,7 @@ print("", result4)  # 16
 
 
 
-##? Method 9: ---------------( Ljust and Rjust  Method )---------------
+##? Method 10: ---------------( Ljust and Rjust  Method )---------------
 a = "rakib"
 
 length = len(a)
@@ -340,7 +355,7 @@ print("", result4)  # 11
 
 
 
-##? Method 10: ---------------( Count  Method )---------------
+##? Method 11: ---------------( Count  Method )---------------
 ## এর মাধ্যমে String এর ভেতর কয়টি নির্দিষ্ট সংক Alphabet আছে তা বের করা যায়।
 
 txt_1 = "dhaka"        ##*  |   |   | a |   | a |
@@ -369,3 +384,340 @@ print("Variable `txt_2` count result =", result2)
 result3 = txt_2.count("apple", 10, 24)   
 print("Variable `txt_2` count result =", result3)  ## total Count = 1
 print(txt_2[10:24])    ## Output: "les, apple are"
+
+
+
+
+##? Method 12: ---------------( Strip  Method )---------------
+## কোন Word এর ডানে ও বামের Space ও অন্যান্য garbage values কে Remove করে দেয়।
+
+txt_1 = "   dhaka  "              ##*  |   |   |   | d | h | a | k | a |   |   |
+  
+txt_2 = "333bangladeshiiiiiaaa"   ##*  | 3 | 3 | 3 | b | a | n | g | l | a | d | e | s | h | i | i | i | i | i | a | a | a |
+
+print("Length of txt_1 = ",len(txt_1))  ## Results = `10`
+print("Length of txt_2 = ",len(txt_2))  ## Results = `21`
+
+print("--------------------------------------------")
+
+result1 = txt_1.strip()
+print("Variable `txt_1` strip result =", result1)   ## Results = `dhaka`
+print("Length of result1 = ",len(result1))          ## Results = `5`
+
+result2 = txt_2.strip("3ia")
+print("Variable `txt_2` strip result =", result2)   ## Results = `bangladesh`
+print("Length of result2 = ",len(result2))          ## Results = `10`
+
+
+
+
+##? Method 13: ---------------( Splite Method )---------------
+"""
+Sentance এর ক্ষেত্রে Split Function টি প্রত্যেক Word গুলোকে আলাদা করে একটি List বানিয়ে দেয়, 
+এই ক্ষেত্রে by default `space` এর উপর ভিতি করে সে আলাদা করে। আমরা চাইলে `space` এর পরিবর্তে 
+যে কোন কিছুর সাহায্যে করতে পারি, সেই ক্ষত্রে তা splite() এর ভেতর mention করে দিতে হবে।
+## NOTE:- This Method return a List
+"""  
+
+##! Example 1:-
+txt_1 = "bangladesh"       
+
+result1 = txt_1.split()
+print("Variable `txt_1` splite result =", result1)   ## Results = `['bangladesh']`
+
+
+##! Example 2:-
+txt_2 = "i live in dhaka city."   
+
+result2 = txt_2.split()
+print("Variable `txt_2` splite result =", result2)   ## Results = `['i', 'live', 'in', 'dhaka', 'city.']`
+
+
+##! Example 3:-
+txt_3 = "rakib15-8123@diu.edu.bd"
+
+result3 = txt_3.split('@')
+print("Variable `txt_3` splite result =", result3)   ## Results = `['rakib15-8123', 'diu.edu.bd']`
+
+
+##! Example 4:-
+txt_4 = "rakib1515hassan@gmail.com"
+
+result4, result5 = txt_4.split('@')
+print(result4)   ## Results = `rakib1515hassan`
+print(result5)   ## Results = `gmail.com`
+
+first_name, last_name = result4.split('1515')
+print("First Name",first_name.capitalize())   ## Results = `Rakib`
+print("Last Name",last_name.capitalize())     ## Results = `Hassan`
+
+
+##! Example 5:-
+txt_5 = "I like to play cricket and i also like to play football."
+
+print("Total `to` in our sentence = ", txt_5.count('to')) ##  Results = 2
+
+result6 = txt_5.split('to') 
+print(result6)      ## Results = `['I like ', ' play cricket and i also like ', ' play football.']`
+
+
+
+##? Method 14: ---------------( Partition Method )---------------
+"""
+Sentance কে কোন নির্দিষ্ট Element এর সাপেক্ষে ভাগ করে ফেলে। 
+## NOTE:- Always return Tuple.
+"""  
+
+##! Example 1:-
+txt_1 = "i live in dhaka city."   
+
+result1 = txt_1.partition('in')
+print("Variable `txt_1` partition result =", result1)   ## Results = `('i live ', 'in', ' dhaka city.')`
+
+
+##! Example 2:-
+txt_2 = "I like to play cricket and i also like to play football."
+
+print("Total `to` in our sentence = ", txt_2.count('to')) ##  Results = 2
+
+result2 = txt_2.partition('to') 
+print(result2)      ## Results = `('I like ', 'to', ' play cricket and i also like to play football.')`
+
+
+
+##? Method 15: ---------------( Startswith Method )---------------
+"""
+Sentance কি দিয়ে শুরু হয়েছে তা চেক করা যায়। 
+## NOTE:- Always return True/False.
+"""  
+
+##! Example 1:-
+txt_1 = "i live in dhaka city."   
+
+result1 = txt_1.startswith('i')
+print(result1)   ## Results = `True`
+
+
+##! Example 2:-
+txt_2 = "Football is my favorite game."
+
+result2 = txt_2.startswith('Football') 
+print(result2)      ## Results = `True`
+
+
+##! Example 3:-
+txt_3 = "i live in dhaka city."   
+
+result3 = txt_3.startswith('I')
+print(result3)   ## Results = `False`
+
+
+
+##? Method 16: ---------------( Endswith Method )---------------
+"""
+Sentance কি দিয়ে শেষ হয়েছে তা চেক করা যায়। 
+## NOTE:- Always return True/False.
+"""  
+
+##! Example 1:-
+txt_1 = "i live in dhaka city"   
+
+result1 = txt_1.endswith('y')
+print(result1)   ## Results = `True`
+
+
+##! Example 2:-
+txt_2 = "Football is my favorite game"
+
+result2 = txt_2.endswith('game') 
+print(result2)      ## Results = `True`
+
+
+##! Example 3:-
+txt_3 = "i live in dhaka city"   
+
+result3 = txt_3.startswith('City')
+print(result3)   ## Results = `False`
+
+
+##! Example 4:-
+txt_4 = "i live in dhaka city."   
+
+result4 = txt_4.startswith('city')
+print(result4)   ## Results = `False`
+
+
+
+##? Method 17: ---------------( Replace Method )---------------
+"""
+Sentance এর কোন অংশ পরিবর্তন করা যায়।
+"""  
+
+##! Example 1:-
+txt_1 = "i live in dhaka city"   
+
+result1 = txt_1.replace("dhaka", "syhllet")  
+print(result1)   ## Results = `i live in syhllet city`
+print(txt_1)     ## Results = `i live in dhaka city`
+
+
+# ##! Example 2:-
+txt_2 = "I like to play cricket and i also like to play football."
+
+result2 = txt_2.replace("play", "see")
+print(result2)      ## Results = `I like to see cricket and i also like to see football.`
+
+
+##? Method 18: ---------------( IsLower Method )---------------
+"""
+Sentance টির সব গুলো Alphabet small letter কি না তা check করে দেয়।
+NOTE:- Always return True/False
+"""  
+
+##! Example 1:-
+txt_1 = "bangladesh"   
+
+result1 = txt_1.islower() 
+print(result1)   ## Results = `False`   
+
+
+##! Example 2:-
+txt_2 = "banGlaDesH"   
+
+result2 = txt_2.islower() 
+print(result2)   ## Results = `True`
+
+
+##! Example 3:-
+txt_3 = "i would like To Play football."   
+
+result3 = txt_3.islower() 
+print(result3)   ## Results = `False`
+
+
+##! Example 4:-
+txt_4 = "i would like to play football."   
+
+result4 = txt_4.islower() 
+print(result4)   ## Results = `True`
+
+
+
+##? Method 19: ---------------( IsTitle Method )---------------
+"""
+Sentance টির সব গুলো Word এর First Alphabet Capital letter কি না তা check করে দেয়।
+NOTE:- Always return True/False
+"""  
+
+##! Example 1:-
+txt_1 = "bangladesh"   
+
+result1 = txt_1.istitle() 
+print(result1)   ## Results = `False`   
+
+
+##! Example 2:-
+txt_2 = "Bangladesh"   
+
+result2 = txt_2.istitle() 
+print(result2)   ## Results = `True`
+
+
+##! Example 3:-
+txt_3 = "i would like To Play football."   
+
+result3 = txt_3.istitle() 
+print(result3)   ## Results = `False`
+
+
+##! Example 4:-
+txt_4 = "I Would Like To Play Football."   
+
+result4 = txt_4.istitle() 
+print(result4)   ## Results = `True`
+
+
+##? Method 20: ---------------( IsDigit, IsNumeric, IsDecimal, IsAlpha, IsAlNum Method )---------------
+
+print("------------+ isdigit() +-------------")
+##! IsDigit Method ---------------------------
+txt_1 = "21"
+print(txt_1.isdigit())   ## Results = `True`   
+
+txt_2 = "5.69"   
+print(txt_2.isdigit())   ## Results = `False`
+
+txt_3 = "1st"   
+print(txt_3.isdigit())   ## Results = `False`
+
+txt_4 = "3/4"   
+print(txt_4.isdigit())   ## Results = `False`
+
+
+print("------------+ isnumeric() +-------------")
+##! IsNumeric Method ---------------------------
+txt_5 = "21"
+print(txt_5.isnumeric())   ## Results = `True`   
+
+txt_6 = "5.69"   
+print(txt_6.isnumeric())   ## Results = `False`
+
+txt_7 = "1st"   
+print(txt_7.isnumeric())   ## Results = `False`
+
+txt_8 = "3/4"   
+print(txt_8.isnumeric())   ## Results = `False`
+
+
+print("------------+ isdecimal() +-------------")
+##! IsDecimal Method ---------------------------
+txt_9 = "21"
+print(txt_9.isdecimal())   ## Results = `True`   
+
+txt_10 = "5.6956"  
+print(txt_10.isdecimal())   ## Results = `False`
+
+txt_11 = "1st"   
+print(txt_11.isdecimal())   ## Results = `False`
+
+txt_12 = "3/4"   
+print(txt_12.isdecimal())   ## Results = `False`
+
+
+print("------------+ isalpha() +-------------")
+##! IsAlpha Method ---------------------------
+txt_13 = "a"
+print(txt_13.isalpha())   ## Results = `True`   
+
+txt_14 = "B"  
+print(txt_14.isalpha())   ## Results = `True`
+
+txt_15 = "Bangladesh"   
+print(txt_15.isalpha())   ## Results = `True`
+
+txt_16 = "Bangladesh in"   
+print(txt_16.isalpha())   ## Results = `False`
+
+txt_17 = "Bangladesh1971"   
+print(txt_17.isalnum())   ## Results = `True`
+
+
+print("------------+ isalnum() +-------------")
+##! IsAlNum Method ---------------------------
+txt_18 = "a"
+print(txt_18.isalnum())   ## Results = `True`   
+
+txt_19 = "B"  
+print(txt_19.isalnum())   ## Results = `True`
+
+txt_20 = "Bangladesh"   
+print(txt_20.isalnum())   ## Results = `True`
+
+txt_21 = "Bangladesh in"   
+print(txt_21.isalnum())   ## Results = `False`
+
+txt_22 = "Bangladesh 1971"   
+print(txt_22.isalnum())   ## Results = `False`
+
+txt_23 = "Bangladesh1971"   
+print(txt_23.isalnum())   ## Results = `True`
