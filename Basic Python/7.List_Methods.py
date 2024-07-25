@@ -1,4 +1,4 @@
-"""NOTE:- Syntax of Tuple Data Type:
+"""NOTE:- Syntax of List Data Type:
 We can store the sequential data on List. Any type of data we can store in List.
 
 => Generally `[` দিয়ে শুরু হবে এবং `]` দিয়ে শেষ হবে।
