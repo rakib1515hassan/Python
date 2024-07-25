@@ -14,11 +14,11 @@
 """
 
 ##! Generally we define Set like this:-  ========================================================
-city = {"dhaka", "barisal", "khulna", "chitogong"}
+city = {"dhaka", "Barishal", "Khulna", "Chittagong"}
 
 roll = {1001, 1002, 1003, 1004, 1005, 1006}
 
-print("Print `city` data =",city)       ##* Print `city` data = {'dhaka', 'barisal', 'chitogong', 'khulna'}
+print("Print `city` data =",city)       ##* Print `city` data = {'dhaka', 'Barishal', 'Chittagong', 'Khulna'}
 print("Print `roll` data =",roll)       ##* Print `roll` data = {1001, 1002, 1003, 1004, 1005, 1006}
 
 print("Type of `city` =", type(city))   ##* Type of `city`    = <class 'set'> 
@@ -27,9 +27,9 @@ print("Type of `roll` =", type(roll))   ##* Type of `roll`    = <class 'set'>
 
 
 ##! Using Constructor to define a Set ============================================================
-city = set(("dhaka", "barisal", "khulna", "chitogong"))
+city = set(("dhaka", "Barishal", "Khulna", "Chittagong"))
 
-print("Print `city` data =",city)       ##* Print `city` data = {'barisal', 'dhaka', 'khulna', 'chitogong'}
+print("Print `city` data =",city)       ##* Print `city` data = {'Barishal', 'dhaka', 'Khulna', 'Chittagong'}
 
 print("Type of `city` =", type(city))   ##* Type of `city`    = <class 'set'>
 

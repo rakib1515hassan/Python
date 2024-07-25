@@ -562,7 +562,7 @@ def Bangladesh():
     return "Dhaka"
     return "Borisal"
     return "Khulna"
-    return "Chitogong"
+    return "Chittagong"
     return "Rajshai"
 
 for i in Bangladesh():
@@ -580,7 +580,7 @@ def Bangladesh():
     print("Dhaka")
     print("Borisal")
     print("Khulna")
-    print("Chitogong")
+    print("Chittagong")
     print("Rajshai")
 
 count = 0
@@ -593,7 +593,7 @@ print("Count = ", count)
     Dhaka
     Borisal
     Khulna
-    Chitogong
+    Chittagong
     Rajshai
     Traceback (most recent call last):
     File "Z:\Python\Basic Python\test.py", line 29, in <module>
@@ -607,7 +607,7 @@ def Bangladesh():
     yield "Dhaka"
     yield "Borisal"
     yield "Khulna"
-    yield "Chitogong"
+    yield "Chittagong"
     yield "Rajshai"
 
 count = 0
@@ -620,7 +620,7 @@ print("Count = ", count)
     Dhaka
     Borisal
     Khulna
-    Chitogong
+    Chittagong
     Rajshai
     Count =  5
 """

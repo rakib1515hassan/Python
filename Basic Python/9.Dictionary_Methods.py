@@ -58,7 +58,7 @@ persone = {
     "date_of_birth" : "20 Oct 1998",
     "parents"  : ("Md Shahjahan Mia", "Mrs. Rashida Bagum"),
     "fev_game" : ["Cricket", "Football", "Badmintons"],
-    "address"  : {"division":"Chitogong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"},
+    "address"  : {"division":"Chittagong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"},
 }
 
 print(persone) 
@@ -78,7 +78,7 @@ print(persone)
             'Badmintons'
         ], 
         'address': {
-            'division': 'Chitogong', 
+            'division': 'Chittagong', 
             'distic'  : 'Chandpur', 
             'thana': 'Hazigong', 
             'gram' : 'Pirozpur Bazer'
@@ -104,7 +104,7 @@ print(persone['fev_game'][2])   ## Result = `Badmintons`
 
 print("\n")
 print("Address: ")                                   ## Result = `Address:`
-print("Division =", persone['address']['division'])  ## Result = `Division = Chitogong`
+print("Division =", persone['address']['division'])  ## Result = `Division = Chittagong`
 print("Distic =", persone['address']['distic'])      ## Result = `Distic = Chandpur`
 print("Thana =", persone['address']['thana'])        ## Result = `Thana = Hazigong`
 print("Gram =", persone['address']['gram'])          ## Result = `Gram = Pirozpur Bazer`
@@ -115,7 +115,7 @@ print("\n")
 print(persone.get("name"))     ## Result = `Md Rakib Hassan`
 print(persone.get("parents"))  ## Result = `('Md Shahjahan Mia', 'Mrs. Rashida Bagum')`
 print(persone.get("fev_game")) ## Result = `['Cricket', 'Football', 'Badmintons']`
-print(persone.get("address"))  ## Result = `{'division': 'Chitogong', 'distic': 'Chandpur', 'thana': 'Hazigong', 'gram': 'Pirozpur Bazer'}`
+print(persone.get("address"))  ## Result = `{'division': 'Chittagong', 'distic': 'Chandpur', 'thana': 'Hazigong', 'gram': 'Pirozpur Bazer'}`
 
 ##? -------------(+ Keys Method +)----------------------------
 print("\n")
@@ -173,7 +173,7 @@ for V in persone.values():
         Badmintons
 
         Address:
-        Chitogong
+        Chittagong
         Chandpur
         Hazigong
         Pirozpur Bazer
@@ -224,7 +224,7 @@ for K, V in persone.items():
 
 
         Address:
-        division = Chitogong
+        division = Chittagong
         distic = Chandpur
         thana = Hazigong
         gram = Pirozpur Bazer
@@ -459,7 +459,7 @@ person.update({"fev_game" : ["Cricket", "Football", "Badmintons"]})
 # print("\n")
 
 
-person.update({"address" : {"division":"Chitogong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"}})
+person.update({"address" : {"division":"Chittagong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"}})
 print(person)
 # print("\n")
 
@@ -477,7 +477,7 @@ person["fev_game"] = ["Cricket", "Football", "Badmintons"]
 # print("\n")
 
 
-person["address"] = {"division":"Chitogong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"}
+person["address"] = {"division":"Chittagong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"}
 print(person)
 # print("\n")
 
@@ -488,7 +488,7 @@ person = {
     "age" : 26,
     "gender" : "Male",
     "fev_game" : ["Cricket", "Football"],
-    "address"  : {"division":"Chitogong", "distic":"Chandpur"},
+    "address"  : {"division":"Chittagong", "distic":"Chandpur"},
 }
 
 person.setdefault("city")
@@ -499,7 +499,7 @@ print(person)
         'age': 26, 
         'gender': 'Male', 
         'fev_game': ['Cricket', 'Football'], 
-        'address': {'division': 'Chitogong', 'distic': 'Chandpur'}, 
+        'address': {'division': 'Chittagong', 'distic': 'Chandpur'}, 
         'city': None
     }
 """
@@ -513,7 +513,7 @@ print(person)
         'age': 26, 
         'gender': 'Male', 
         'fev_game': ['Cricket', 'Football'], 
-        'address': {'division': 'Chitogong', 'distic': 'Chandpur'}, 
+        'address': {'division': 'Chittagong', 'distic': 'Chandpur'}, 
         'city': "Dhaka"
     }
 """
@@ -550,16 +550,16 @@ person = {
     "age" : 26,
     "gender" : "Male",
     "fev_game" : ["Cricket", "Football", "Badmintons"],
-    "address"  : {"division":"Chitogong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"},
+    "address"  : {"division":"Chittagong", "distic":"Chandpur", "thana":"Hazigong", "gram": "Pirozpur Bazer"},
 }
 
 ## NOTE:- Dictionary, ভেতর থেকে কোন Item কে Delete করতে চাইলে এটি ব্যবহার করতে পারি।
 ##        তবে এখানে অবশ্যয়ি pop() এর ভেতর Argument pass করে হবে।
 person.pop('age')
-print(person)  ## Result = `{'name': 'Md Rakib Hassan', 'gender': 'Male', 'fev_game': ['Cricket', 'Football', 'Badmintons'], 'address': {'division': 'Chitogong', 'distic': 'Chandpur', 'thana': 'Hazigong', 'gram': 'Pirozpur Bazer'}}`
+print(person)  ## Result = `{'name': 'Md Rakib Hassan', 'gender': 'Male', 'fev_game': ['Cricket', 'Football', 'Badmintons'], 'address': {'division': 'Chittagong', 'distic': 'Chandpur', 'thana': 'Hazigong', 'gram': 'Pirozpur Bazer'}}`
 
 person.pop('fev_game')
-print(person)  ## Result = `{'name': 'Md Rakib Hassan', 'age': 26, 'gender': 'Male', 'address': {'division': 'Chitogong', 'distic': 'Chandpur', 'thana': 'Hazigong', 'gram': 'Pirozpur Bazer'}}`
+print(person)  ## Result = `{'name': 'Md Rakib Hassan', 'age': 26, 'gender': 'Male', 'address': {'division': 'Chittagong', 'distic': 'Chandpur', 'thana': 'Hazigong', 'gram': 'Pirozpur Bazer'}}`
 
 
 ##* NOTE:- Nested Dictionary হতে Item Delete করার জন্যে।
@@ -581,7 +581,7 @@ person = {
     "age" : 26,
     "gender" : "Male",
     "fev_game" : ["Cricket", "Football"],
-    "address"  : {"division":"Chitogong", "distic":"Chandpur"},
+    "address"  : {"division":"Chittagong", "distic":"Chandpur"},
 }
 
 ## NOTE:- Dictionary, 
@@ -598,7 +598,7 @@ print(person)
         'gender': 'Male', 
         'fev_game': ['Cricket', 'Football'], 
         'address': {
-            'division': 'Chitogong', 
+            'division': 'Chittagong', 
             'distic': 'Cumillah'
         }
     }
@@ -616,22 +616,22 @@ person = {
     "age" : 26,
     "gender" : "Male",
     "fev_game" : ["Cricket", "Football"],
-    "address"  : {"division":"Chitogong", "distic":"Chandpur"},
+    "address"  : {"division":"Chittagong", "distic":"Chandpur"},
 }
 
 
 ##NOTE:-  দুইটি একই কাজ করে।
 temp_person = person
-print(temp_person)  ## Result = `{'name': 'Md Rakib', 'age': 26, 'gender': 'Male', 'fev_game': ['Cricket', 'Football'], 'address': {'division': 'Chitogong', 'distic': 'Chandpur'}}`
+print(temp_person)  ## Result = `{'name': 'Md Rakib', 'age': 26, 'gender': 'Male', 'fev_game': ['Cricket', 'Football'], 'address': {'division': 'Chittagong', 'distic': 'Chandpur'}}`
 
 temp_person = person.copy()
-print(temp_person)  ## Result = `{'name': 'Md Rakib', 'age': 26, 'gender': 'Male', 'fev_game': ['Cricket', 'Football'], 'address': {'division': 'Chitogong', 'distic': 'Chandpur'}}`
+print(temp_person)  ## Result = `{'name': 'Md Rakib', 'age': 26, 'gender': 'Male', 'fev_game': ['Cricket', 'Football'], 'address': {'division': 'Chittagong', 'distic': 'Chandpur'}}`
 
 temp_person = person["address"]
-print(temp_person) ## Result = `{'division': 'Chitogong', 'distic': 'Chandpur'}`
+print(temp_person) ## Result = `{'division': 'Chittagong', 'distic': 'Chandpur'}`
 
 temp_person = person["address"].copy()
-print(temp_person) ## Result = `{'division': 'Chitogong', 'distic': 'Chandpur'}`
+print(temp_person) ## Result = `{'division': 'Chittagong', 'distic': 'Chandpur'}`
 
 temp_person = person["address"]["division"]
-print(temp_person) ## Result = `Chitogong`
+print(temp_person) ## Result = `Chittagong`

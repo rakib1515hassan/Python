@@ -55,44 +55,44 @@ print("Type of `b` =", type(b))   ##* Type of `b`    = <class 'list'>
 
 ##! Nested List:- ============================================================================
 
-a = [["Dhaka", "Savar", "Gagipur"], "Khulna", "Shyllet", ["Chitogong", "Coxes-bazer", "Rangamaty", ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+a = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ["Chittagong", "Cox's Bazar", "Rangamati", ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
-print(a) ## Result = [['Dhaka', 'Savar', 'Gagipur'], 'Khulna', 'Shyllet', ['Chitogong', 'Coxes-bazer', 'Rangamaty'], 'Rajsahi', 'Rongpur', 'Mymansing', 'Barisal']
+print(a) ## Result = [['Dhaka', 'Savar', 'Ghazipur'], 'Khulna', 'Sylhet', ['Chittagong', 'Cox's Bazar', 'Rangamati'], 'Rajshahi', 'Rangpur', 'Mymensingh', 'Barishal ']
 print("Type of `a` =", type(a)) ## Type of `a` = <class 'list'>
 
 """##NOTE:- Structure of Nested List and Index
 ##? Length          1                   2         3              4                     5         6           7           8
 ##* Index           0                   1         2              3                     4         5           6           7
-#            [[                  ], "Khulna", "Shyllet", [                      ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+#            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chitogong",   (3,0)/(-8,-3)       
-#               "Savar",   (0,1)/(-8,-2)                   "Coxes-bazer", (3,1)/(-8,-2)
-#               "Gagipur"  (0,2)/(-8,-1)                   "Rangamaty",   (3,2)/(-8,-1)
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
+#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
 #            
 """
 print("\n\n")
 print("Posetive Index: ")
-print(a[0])       ## Result = `['Dhaka', 'Savar', 'Gagipur']`
+print(a[0])       ## Result = `['Dhaka', 'Savar', 'Ghazipur']`
 print(a[1])       ## Result = `Khulna`
-print(a[3])       ## Result = `['Chitogong', 'Coxes-bazer', 'Rangamaty']`
-print(a[6])       ## Result = `Mymansing`
+print(a[3])       ## Result = `['Chittagong', 'Cox's Bazar', 'Rangamati']`
+print(a[6])       ## Result = `Mymensingh`
 
 print("\n\n")
 print("Negative Index: ")
-print(a[-3])       ## Result = `Rongpur`
-print(a[-5])       ## Result = `['Chitogong', 'Coxes-bazer', 'Rangamaty']`
+print(a[-3])       ## Result = `Rangpur`
+print(a[-5])       ## Result = `['Chittagong', 'Cox's Bazar', 'Rangamati']`
 print(a[-7])       ## Result = `Khulna`
-print(a[-8])       ## Result = `['Dhaka', 'Savar', 'Gagipur']`
+print(a[-8])       ## Result = `['Dhaka', 'Savar', 'Ghazipur']`
 
 print("\n\n")
 print("Posetive Nested Index: ")
 print(a[0][0])       ## Result = `Dhaka`
 print(a[0][1])       ## Result = `Savar`
-print(a[0][2])       ## Result = `Gagipur`
+print(a[0][2])       ## Result = `Ghazipur`
 
 print("\n\n")
 print("Negative Nested Index: ")
-print(a[-8][-1])     ## Result = `Gagipur`
+print(a[-8][-1])     ## Result = `Ghazipur`
 print(a[-8][-2])     ## Result = `Savar`
 print(a[-8][-3])     ## Result = `Dhaka`
 
@@ -110,19 +110,19 @@ my_list = []
 n = int(input("How many items you want to add on your list? = "))  ## If you gibe here `5`
 
 for i in range(n):
-    value = input(f"Give your {i+1} item value =") ## If You give value like `Dhaka, Rajsahi, Barisal, Khulna, Chitogong`
+    value = input(f"Give your {i+1} item value =") ## If You give value like `Dhaka, Rajshahi, Barishal , Khulna, Chittagong`
     my_list.append(value)
 
-print("My List is: ", my_list)  ## My List is:  ['Dhaka', 'Rajsahi', 'Barisal', 'Khulna', 'Chitogong']
+print("My List is: ", my_list)  ## My List is:  ['Dhaka', 'Rajshahi', 'Barishal ', 'Khulna', 'Chittagong']
 
 
 
 ##? Formula 2 :-
-input_data = input("Give your items using spaces: ")  ## If given input like: `Dhaka Barisan khulna Rajsahi`
+input_data = input("Give your items using spaces: ")  ## If given input like: `Dhaka Barisan Khulna Rajshahi`
 
 my_list = input_data.split()
 
-print("My List is: ", my_list) ## My List is:  ['Dhaka', 'Barisan', 'khulna', 'Rajsahi']
+print("My List is: ", my_list) ## My List is:  ['Dhaka', 'Barisan', 'Khulna', 'Rajshahi']
 
 
 ##? Formula 3 :-
@@ -283,7 +283,7 @@ print(fruits) ## Result = `[]`
 ##? ---------------------------------------------------------------------
 ##? Retrieve List Values
 
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
 for division in divisions:
     print("Division Name:",division)
@@ -291,16 +291,16 @@ for division in divisions:
 """ ##* Result =
         Division Name: Dhaka
         Division Name: Khulna
-        Division Name: Shyllet
-        Division Name: Chitogong
-        Division Name: Rajsahi
-        Division Name: Rongpur
-        Division Name: Mymansing
-        Division Name: Barisal
+        Division Name: Sylhet
+        Division Name: Chittagong
+        Division Name: Rajshahi
+        Division Name: Rangpur
+        Division Name: Mymensingh
+        Division Name: Barishal 
 """
 
 
-divisions = [["Dhaka", "Savar", "Gagipur"], "Khulna", "Shyllet", ["Chitogong", "Coxes-bazer", "Rangamaty", ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+divisions = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ["Chittagong", "Cox's Bazar", "Rangamati", ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
 
 for division in divisions:
@@ -312,23 +312,23 @@ for division in divisions:
 """##* Result =
         City Name:  Dhaka
         City Name:  Savar
-        City Name:  Gagipur
-        City Name:  Chitogong
-        City Name:  Coxes-bazer
-        City Name:  Rangamaty
+        City Name:  Ghazipur
+        City Name:  Chittagong
+        City Name:  Cox's Bazar
+        City Name:  Rangamati
 """
 
 
-divisions = [["Dhaka", "Savar", "Gagipur"], "Khulna", "Shyllet", ["Chitogong", "Coxes-bazer", "Rangamaty", ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+divisions = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ["Chittagong", "Cox's Bazar", "Rangamati", ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
 """##NOTE:- Structure of `divisions` index
 ##? Length          1                   2         3              4                     5         6           7           8
 ##* Index           0                   1         2              3                     4         5           6           7
-#            [[                  ], "Khulna", "Shyllet", [                      ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+#            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chitogong",   (3,0)/(-8,-3)       
-#               "Savar",   (0,1)/(-8,-2)                   "Coxes-bazer", (3,1)/(-8,-2)
-#               "Gagipur"  (0,2)/(-8,-1)                   "Rangamaty",   (3,2)/(-8,-1)
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
+#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
 #            
 """
 
@@ -344,16 +344,16 @@ for d_index, division in enumerate(divisions):
 """##* Result =
             City Name: Dhaka | Index: (0, 0)
             City Name: Savar | Index: (0, 1)
-            City Name: Gagipur | Index: (0, 2)
+            City Name: Ghazipur | Index: (0, 2)
         Division Name: Khulna| Index: 1
-        Division Name: Shyllet| Index: 2
-            City Name: Chitogong | Index: (3, 0)
-            City Name: Coxes-bazer | Index: (3, 1)
-            City Name: Rangamaty | Index: (3, 2)
-        Division Name: Rajsahi| Index: 4
-        Division Name: Rongpur| Index: 5
-        Division Name: Mymansing| Index: 6
-        Division Name: Barisal| Index: 7
+        Division Name: Sylhet| Index: 2
+            City Name: Chittagong | Index: (3, 0)
+            City Name: Cox's Bazar | Index: (3, 1)
+            City Name: Rangamati | Index: (3, 2)
+        Division Name: Rajshahi| Index: 4
+        Division Name: Rangpur| Index: 5
+        Division Name: Mymensingh| Index: 6
+        Division Name: Barishal | Index: 7
 """
 
 length = len(divisions)
@@ -366,22 +366,22 @@ print("Length =", length)  ## Result = `8`
     => copy method এর সাহায্যে আমরা কোন List কে Copy করতে পারি, 
        এমন কি এর এর ভেতরে থাক Nested List টি কে ও আমরা Copy করতে পরি।
 """
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
 copy_list = divisions.copy()
-print("Copy List: ", copy_list) ## Copy List: ['Dhaka', 'Khulna', 'Shyllet', 'Chitogong', 'Rajsahi', 'Rongpur', 'Mymansing', 'Barisal']
+print("Copy List: ", copy_list) ## Copy List: ['Dhaka', 'Khulna', 'Sylhet', 'Chittagong', 'Rajshahi', 'Rangpur', 'Mymensingh', 'Barishal ']
 
 
-divisions = [["Dhaka", "Savar", "Gagipur"], "Khulna", "Shyllet", ["Chitogong", "Coxes-bazer", "Rangamaty", ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+divisions = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ["Chittagong", "Cox's Bazar", "Rangamati", ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
 """##NOTE:- Structure of `divisions` index
 ##? Length          1                   2         3              4                     5         6           7           8
 ##* Index           0                   1         2              3                     4         5           6           7
-#            [[                  ], "Khulna", "Shyllet", [                      ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+#            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chitogong",   (3,0)/(-8,-3)       
-#               "Savar",   (0,1)/(-8,-2)                   "Coxes-bazer", (3,1)/(-8,-2)
-#               "Gagipur"  (0,2)/(-8,-1)                   "Rangamaty",   (3,2)/(-8,-1)
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
+#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
 #            
 """
 
@@ -393,7 +393,7 @@ for division in divisions:
         break
 
 
-print("Citys :", citys)    ## Result = `['Dhaka', 'Savar', 'Gagipur']`
+print("Citys :", citys)    ## Result = `['Dhaka', 'Savar', 'Ghazipur']`
 
 
 ##? Method 4: --------------( Index Method )-------------------------
@@ -404,32 +404,32 @@ print("Citys :", citys)    ## Result = `['Dhaka', 'Savar', 'Gagipur']`
        NOTE:- Nested List এর ক্ষত্রে এটা কাজ কোরবে না। সেই ক্ষেত্রে Menual নিয়বে কোরতে হবে।
 """
 
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
-inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajsahi
+inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajshahi
 
 try:
     index_no = divisions.index(inpute_value)
-    print(f"{inpute_value} index no: {index_no}")  ## Result = `Rajsahi index no: 4`
+    print(f"{inpute_value} index no: {index_no}")  ## Result = `Rajshahi index no: 4`
 
 except Exception as e:
     print(f"Error: {e}")
 
 
-divisions = [["Dhaka", "Savar", "Gagipur"], "Khulna", "Shyllet", ["Chitogong", "Coxes-bazer", "Rangamaty", ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+divisions = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ["Chittagong", "Cox's Bazar", "Rangamati", ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
 """##NOTE:- Structure of `divisions` index
 ##? Length          1                   2         3              4                     5         6           7           8
 ##* Index           0                   1         2              3                     4         5           6           7
-#            [[                  ], "Khulna", "Shyllet", [                      ], "Rajsahi", "Rongpur", "Mymansing", "Barisal"]
+#            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chitogong",   (3,0)/(-8,-3)       
-#               "Savar",   (0,1)/(-8,-2)                   "Coxes-bazer", (3,1)/(-8,-2)
-#               "Gagipur"  (0,2)/(-8,-1)                   "Rangamaty",   (3,2)/(-8,-1)
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
+#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
 #            
 """
 
-inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajsahi Else If give :Coxes-bazer
+inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajshahi Else If give :Cox's Bazar
 
 search_flag = False
 
@@ -454,8 +454,8 @@ for d_index, division in enumerate(divisions):
 if search_flag == True:
     print(f"{inpute_value} index no: {index_no}") 
     """Result = 
-            If given :Rajsahi then Result :Rajsahi index no: [4] 
-            Else if give :Coxes-bazer then Result :Coxes-bazer index no: [3, 1]
+            If given :Rajshahi then Result :Rajshahi index no: [4] 
+            Else if give :Cox's Bazar then Result :Cox's Bazar index no: [3, 1]
     """
 else:        
     print("Error: Your input value not found!")
@@ -469,9 +469,9 @@ else:
        NOTE:- Nested List এর ক্ষত্রে এটা কাজ কোরবে না। সেই ক্ষেত্রে Menual নিয়মে কোরতে হবে।
 """
 
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Dhaka", ["Saver", "Dhaka", "Gagipur"], "Mymansing", "Dhaka", "Shyllet"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Dhaka", ["Saver", "Dhaka", "Ghazipur"], "Mymensingh", "Dhaka", "Sylhet"]
 
-elements = divisions.count("Shyllet")
+elements = divisions.count("Sylhet")
 print("Total elements =", elements)  ## Result = `Total elements = 3`
 
 
@@ -481,7 +481,7 @@ print("Total elements =", elements)  ## Result = `Total elements = 3`
 
 ##! Nested List এর ক্ষত্রে এটি বের করার জন্যে আমাদের Munually করতে হবে।
 
-inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajsahi Else If give :Coxes-bazer
+inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajshahi Else If give :Cox's Bazar
 
 total_count = 0
 
@@ -508,11 +508,11 @@ else:
 
 ##? Method 6: --------------( Reverse Method )-------------------------
 
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
 divisions.reverse()
 
-print(divisions) ## Results = `['Rajsahi', 'Barisal', 'Mymansing', 'Rongpur', 'Rajsahi', 'Chitogong', 'Shyllet', 'Khulna', 'Dhaka']`
+print(divisions) ## Results = `['Rajshahi', 'Barishal ', 'Mymensingh', 'Rangpur', 'Rajshahi', 'Chittagong', 'Sylhet', 'Khulna', 'Dhaka']`
 
 
 
@@ -522,13 +522,13 @@ print(divisions) ## Results = `['Rajsahi', 'Barisal', 'Mymansing', 'Rongpur', 'R
        কোরলে Descending Order এ Sort করবে।
 """
 
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
 ##! Order by Ascending order
 divisions.sort()
 print("After Sort Divisions: ",divisions) 
 """Result =
-    => ['Barisal', 'Chitogong', 'Dhaka', 'Khulna', 'Mymansing', 'Rajsahi', 'Rajsahi', 'Rongpur', 'Shyllet']
+    => ['Barishal ', 'Chittagong', 'Dhaka', 'Khulna', 'Mymensingh', 'Rajshahi', 'Rajshahi', 'Rangpur', 'Sylhet']
 """
 
 
@@ -541,12 +541,12 @@ print("After Sort Income: ",income)
 """
 
 ##! Order by Descending order
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
 divisions.sort(reverse=True)
 print("After Sort Divisions: ",divisions) 
 """Result =
-    => ['Shyllet', 'Rongpur', 'Rajsahi', 'Rajsahi', 'Mymansing', 'Khulna', 'Dhaka', 'Chitogong', 'Barisal']
+    => ['Sylhet', 'Rangpur', 'Rajshahi', 'Rajshahi', 'Mymensingh', 'Khulna', 'Dhaka', 'Chittagong', 'Barishal ']
 """
 
 
@@ -562,12 +562,12 @@ print("After Sort Income: ",income)
 ##! Order by Length
 #NOTE:- Integer এর কোন Length হয় না, তাই এটিকে key=len এর ভিতিতে Sort করা যায় না।
 
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
 divisions.sort(reverse=True, key=len)
 print("After Sort Divisions: ",divisions) 
 """Result =
-      => ['Chitogong', 'Mymansing', 'Shyllet', 'Rajsahi', 'Rongpur', 'Barisal', 'Rajsahi', 'Khulna', 'Dhaka']
+      => ['Chittagong', 'Mymensingh', 'Sylhet', 'Rajshahi', 'Rangpur', 'Barishal ', 'Rajshahi', 'Khulna', 'Dhaka']
 #* Length:    9            9            7          7          7          7          7          6        5
 """
 
@@ -578,12 +578,12 @@ print("After Sort Divisions: ",divisions)
     => Sort এবং Sorted একি, তবে Sorted করার জন্যে তা নতুন কোন Variable এ রাখতে হয়। 
 """
 ##! Order by Ascending order
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
 sorted_divisions = sorted(divisions)
 print("After Sort Divisions: ",sorted_divisions) 
 """Result =
-    => ['Barisal', 'Chitogong', 'Dhaka', 'Khulna', 'Mymansing', 'Rajsahi', 'Rajsahi', 'Rongpur', 'Shyllet']
+    => ['Barishal ', 'Chittagong', 'Dhaka', 'Khulna', 'Mymensingh', 'Rajshahi', 'Rajshahi', 'Rangpur', 'Sylhet']
 """
 
 
@@ -596,12 +596,12 @@ print("After Sort Income: ",sorted_income)
 """
 
 ##! Order by Descending order
-divisions = ["Dhaka", "Khulna", "Shyllet","Chitogong", "Rajsahi", "Rongpur", "Mymansing", "Barisal", "Rajsahi"]
+divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", "Rajshahi"]
 
 sorted_divisions = sorted(divisions, reverse=True)
 print("After Sort Divisions: ",sorted_divisions) 
 """Result =
-    => ['Shyllet', 'Rongpur', 'Rajsahi', 'Rajsahi', 'Mymansing', 'Khulna', 'Dhaka', 'Chitogong', 'Barisal']
+    => ['Sylhet', 'Rangpur', 'Rajshahi', 'Rajshahi', 'Mymensingh', 'Khulna', 'Dhaka', 'Chittagong', 'Barishal ']
 """
 
 
@@ -668,7 +668,7 @@ print("New list: ", new_list)
 
 
 ##! ===========================================================================================
-##! ===============================(+  Some Excersize  +)======================================
+##! ===============================(+  Some Exercise  +)======================================
 
 ##? Question 1:- Take a user input(list) and swap the first and last elements
 """Example:-
