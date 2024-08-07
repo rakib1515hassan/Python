@@ -3,11 +3,11 @@ b = 'dhaka'
 c = "d"
 e = 'd'
 
-print("Type of `a`", type(a))
-print("Type of `b`", type(b))
+print("Type of `a`", type(a))  ## <class 'str'>
+print("Type of `b`", type(b))  ## <class 'str'>
 
-print("Type of `c`", type(c))
-print("Type of `e`", type(e))
+print("Type of `c`", type(c))  ## <class 'str'>
+print("Type of `e`", type(e))  ## <class 'str'>
 
 
 a = "My name is "
@@ -16,10 +16,11 @@ b = "Rakib"
 result = a + b
 print(result)
 
-print(len(a)) 
+print(len(result)) ## `16`
 
 
 """
+#?      Length             1    2     3     4    5     6     7     8    9     10
 #*      Posetive Index:    0    1     2     3    4     5     6     7    8     9   
 #?           String        B    a     n     g    l     a     d     e    s     h
 #Todo/  Negative Index:  -10   -9    -8    -7   -6    -5    -4    -3   -2    -1
@@ -27,9 +28,9 @@ print(len(a))
 
 ##! Positive Indexing
 a = "Bangladesh"
-l = len(a)
+l = len(a)   
 
-print("length of `a`", l)  
+print("length of `a` =", l)  ## length of `a` = 10
 
 for i in range(l): ## 0 1 2 3 4 5 6 7 8 9
     print(f"Index = {i},  Value = {a[i]}")
@@ -48,8 +49,8 @@ l = len(a)
 
 print("length of `a`", l)
 
-print("Posetive Index =",a[9])
-print("Negative Index =",a[-1])
+print("Posetive Index =",a[9])   ##  h
+print("Negative Index =",a[-1])  ##  h
 
 
 
@@ -153,7 +154,7 @@ a = "Bangladesh"
 
 length = 0
 for i in a:
-    length+=1
+    length+=1   ## length = length + 1
 
 print("Using For Loop =",length)
 
