@@ -148,7 +148,7 @@ print("Using recursion: ",reversed_s)   ## result = `hsedalgnaB`
 ##! ---------------------------------------------------------------------------------
 ##! ----------------------------  String All Methods --------------------------------
 """
-
+##! ***
 ##? Method 1: ---------------( Length Mehod )---------------
 a = "Bangladesh"
 
@@ -161,7 +161,7 @@ print("Using For Loop =",length)
 
 print("Using Len Function =",len(a))
 
-
+##! ***
 ##? Method 2: ---------------( Capitalize Method )---------------
 ## শুধু প্রথম Word এর প্রথম Character কে Capitalize করে দেয়।
 
@@ -174,7 +174,7 @@ result = b.capitalize()   ## result =  `I live in dhaka`
 print(result)
 
 
-
+##! ***
 ##? Method 3: ---------------( Title  Method )---------------
 ## প্রত্যেক Word এর First Character কে Capitalise কেরে দেয়।
 
@@ -187,7 +187,7 @@ result = b.title()      ## result =  `I Live In Dhaka`
 print(result)
 
 
-
+##! ***
 ##? Method 4: ---------------( Upper  Method )---------------
 ## Full sentence কে Uppercase করে দিচ্ছে।
 
@@ -200,7 +200,7 @@ result2 = b.upper()      ## result =  `I LIVE IN DHAKA`
 print(result1)
 print(result2)
 
-
+##! ***
 ##? Method 5: ---------------( Casefold  Method )---------------
 ## Full sentence কে lower case করে দিচ্ছে।
 
@@ -214,7 +214,7 @@ print(result1)
 print(result2)
 
 
-
+##! ***
 ##? Method 6: ---------------( Lower  Method )---------------
 ## Full sentence কে lower case করে দিচ্ছে।
 
@@ -243,7 +243,7 @@ result2 = b.swapcase()     ## result =  `I LIVe In DhAKa`
 print(result1)
 print(result2)
 
-
+##! ***
 ##? Method 8: ---------------( Find  Method )---------------
 ## Full sentence হতে কোন character বা কোন word এর সাথে মিল পেলে সেই Index কে Return করে।
 
@@ -255,6 +255,7 @@ result2 = a.find("is")       ## result =  `20`
 
 result3 = a.find("i")        ## result =  `0`
 result4 = b.find("in")       ## result =  `40`
+
 result5 = b.rfind("in")      ## result =  `111`  #* শেষ দিক থেকে কত নাম্বার Positive index এ `in` আছে তা দেখায়।
 
 result6 = b.find("test")     ## result =  `-1`   #* `test` word টি পায়নি তাই `-1` return করেছে।
@@ -271,10 +272,10 @@ print("`test` Position =",result6) ## `test` Position = -1
 
 
 
-##? Method 9: ---------------( Find  Method )---------------
+##? Method 9: ---------------( Center  Method )---------------
 a = "rakib"
 
-length = len(a)
+length = len(a)  ## 5
 
 ##Todo: Example1:
 result1 = a.center(11)       ## result =  `---rakib---`   
@@ -298,7 +299,7 @@ result3 = a.center(16)       ## result =  `-----rakib----`
 
 """
 
-result4 = len(result3)       ## result =  `15`
+result4 = len(result3)       ## result =  `16`
 
 
 
@@ -317,7 +318,7 @@ print("", result4)  # 16
 ##? Method 10: ---------------( Ljust and Rjust  Method )---------------
 a = "rakib"
 
-length = len(a)
+length = len(a)  ## 5
 
 ##Todo: Example1:
 result1 = a.ljust(11)  # result = `rakib------`  
@@ -355,7 +356,7 @@ print("", result4)  # 11
 
 
 
-
+##! ***
 ##? Method 11: ---------------( Count  Method )---------------
 ## এর মাধ্যমে String এর ভেতর কয়টি নির্দিষ্ট সংক Alphabet আছে তা বের করা যায়।
 
@@ -363,15 +364,15 @@ txt_1 = "dhaka"        ##*  |   |   | a |   | a |
   
 txt_2 = "I love apples, apple are my favorite fruit"  
 
-print("Length of txt_1 = ",len(txt_1))
-print("Length of txt_2 = ",len(txt_2))
+print("Length of txt_1 = ",len(txt_1))  ## 5
+print("Length of txt_2 = ",len(txt_2))  ## 42
 
 result1 = txt_1.count('a')
-print("Variable `txt_1` count result =", result1)
+print("Variable `txt_1` count result =", result1)  ## 2
 
 
 result2 = txt_2.count("apple")
-print("Variable `txt_2` count result =", result2)
+print("Variable `txt_2` count result =", result2)  ## 2
 
 
 ##Todo;  Search from position 10 to 24:
@@ -411,7 +412,7 @@ print("Length of result2 = ",len(result2))          ## Results = `10`
 
 
 
-
+##! ***
 ##? Method 13: ---------------( Splite Method )---------------
 """
 Sentance এর ক্ষেত্রে Split Function টি প্রত্যেক Word গুলোকে আলাদা করে একটি List বানিয়ে দেয়, 
@@ -449,8 +450,8 @@ print(result4)   ## Results = `rakib1515hassan`
 print(result5)   ## Results = `gmail.com`
 
 first_name, last_name = result4.split('1515')
-print("First Name",first_name.capitalize())   ## Results = `Rakib`
-print("Last Name",last_name.capitalize())     ## Results = `Hassan`
+print("First Name :",first_name.capitalize())   ## Results = `Rakib`
+print("Last Name :",last_name.capitalize())     ## Results = `Hassan`
 
 
 ##! Example 5:-
@@ -470,6 +471,8 @@ Sentance কে কোন নির্দিষ্ট Element এর সাপ�
 """  
 
 ##! Example 1:-
+##NOTE:- Partition Method always returns Tuple
+
 txt_1 = "i live in dhaka city."   
 
 result1 = txt_1.partition('in')
@@ -485,7 +488,7 @@ result2 = txt_2.partition('to')
 print(result2)      ## Results = `('I like ', 'to', ' play cricket and i also like to play football.')`
 
 
-
+##! ***
 ##? Method 15: ---------------( Startswith Method )---------------
 """
 Sentance কি দিয়ে শুরু হয়েছে তা চেক করা যায়। 
@@ -513,7 +516,7 @@ result3 = txt_3.startswith('I')
 print(result3)   ## Results = `False`
 
 
-
+##! ***
 ##? Method 16: ---------------( Endswith Method )---------------
 """
 Sentance কি দিয়ে শেষ হয়েছে তা চেক করা যায়। 
@@ -548,7 +551,7 @@ result4 = txt_4.startswith('city')
 print(result4)   ## Results = `False`
 
 
-
+##! ***
 ##? Method 17: ---------------( Replace Method )---------------
 """
 Sentance এর কোন অংশ পরিবর্তন করা যায়।
@@ -568,7 +571,7 @@ txt_2 = "I like to play cricket and i also like to play football."
 result2 = txt_2.replace("play", "see")
 print(result2)      ## Results = `I like to see cricket and i also like to see football.`
 
-
+##! ***
 ##? Method 18: ---------------( IsLower Method )---------------
 """
 Sentance টির সব গুলো Alphabet small letter কি না তা check করে দেয়।
