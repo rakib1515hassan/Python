@@ -1,7 +1,7 @@
 """NOTE:- Syntax of List Data Type:
 We can store the sequential data on List. Any type of data we can store in List.
 
-=> Generally `[` দিয়ে শুরু হবে এবং `]` দিয়ে শেষ হবে।
+=> Generally `[` দিয়ে শুরু হবে এবং `]` দিয়ে শেষ হবে। 
 """
 ##! Generally we define list like this:-  ========================================================
 
@@ -9,7 +9,9 @@ a = ["I", "live", "in", "Dhaka", "science", 2001]
 
 print("Print `a` data =",a)       ##* Print `a` data = ['I', 'live', 'in', 'Dhaka', 'science', 2001]
 
-print("Type of `a` =", type(a))   ##* Type of `a`    = <class 'list'>
+print("Data Type of `a` =", type(a))   ##* Type of `a`    = <class 'list'>
+
+print("Length of `a` =", len(a))       ##* Length of `a` = 6
 
 
 """##NOTE:- Structure of List and Index
@@ -18,6 +20,8 @@ print("Type of `a` =", type(a))   ##* Type of `a`    = <class 'list'>
 #            ["I", "live", "in", "Dhaka", "science", 2001]
 ##! Index     -6     -5     -4     -3        -2       -1
 """  
+
+
 
 print("a[0]", a[0])   ## Result = `I`
 print("a[3]", a[3])   ## Result = `Dhaka`

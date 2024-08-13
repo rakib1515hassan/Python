@@ -1,10 +1,22 @@
-##! Example 4:-
-txt_4 = "rakib1515hassan@gmail.com"
+a = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ("Chittagong", "Cox's Bazar", "Rangamati"), "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", {"name": "rakib", "city": "chandpur"}]
 
-result4, result5 = txt_4.split('@')
-print(result4)   ## Results = `rakib1515hassan`
-print(result5)   ## Results = `gmail.com`
 
-first_name, last_name = result4.split('1515')
-print("First Name :",first_name.capitalize())   ## Results = `Rakib`
-print("Last Name :",last_name.capitalize())     ## Results = `Hassan`
+
+"""##NOTE:- Structure of Nested List and Index
+##? Length          1                   2         3              4                     5         6           7           8
+##* Index           0                   1         2              3                     4         5           6           7
+#            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
+##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar",  (3,1)/(-8,-2)
+#               "Ghazipur" (0,2)/(-8,-1)                   "Rangamati",    (3,2)/(-8,-1)
+#            
+"""
+
+print("Posetive Index: ")
+print(a[0])       ## Result = `['Dhaka', 'Savar', 'Ghazipur']`
+print(a[1])       ## Result = `Khulna`
+print(a[3])       ## Result = `("Chittagong", "Cox's Bazar", "Rangamati")`
+print(type(a[3])) ## Result = 
+print(a[6])       ## Result = `Mymensingh`
+print(a[8])
