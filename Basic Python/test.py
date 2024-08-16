@@ -1,22 +1,21 @@
-a = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ("Chittagong", "Cox's Bazar", "Rangamati"), "Rajshahi", "Rangpur", "Mymensingh", "Barishal ", {"name": "rakib", "city": "chandpur"}]
+def check_primes_in_list(numbers):
+    def is_prime(number):
+        if number <= 1:
+            return False
+        for v in range(2, number):
+            if number % v == 0:
+                return False
+        return True
 
+    for number in numbers:
+        if is_prime(number):
+            print(f"{number} is a prime number.")
+        else:
+            print(f"{number} is not a prime number.")
 
+# Example list
+a = [5, 21, 11, 7, 29, 39, 51, 57, 83, 81]
 
-"""##NOTE:- Structure of Nested List and Index
-##? Length          1                   2         3              4                     5         6           7           8
-##* Index           0                   1         2              3                     4         5           6           7
-#            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
-##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
-#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar",  (3,1)/(-8,-2)
-#               "Ghazipur" (0,2)/(-8,-1)                   "Rangamati",    (3,2)/(-8,-1)
-#            
-"""
+# Check primes in the list
+check_primes_in_list(a)
 
-print("Posetive Index: ")
-print(a[0])       ## Result = `['Dhaka', 'Savar', 'Ghazipur']`
-print(a[1])       ## Result = `Khulna`
-print(a[3])       ## Result = `("Chittagong", "Cox's Bazar", "Rangamati")`
-print(type(a[3])) ## Result = 
-print(a[6])       ## Result = `Mymensingh`
-print(a[8])
