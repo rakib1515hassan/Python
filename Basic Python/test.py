@@ -1,21 +1,30 @@
-def check_primes_in_list(numbers):
-    def is_prime(number):
-        if number <= 1:
-            return False
-        for v in range(2, number):
-            if number % v == 0:
-                return False
-        return True
+divisions = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ("Chittagong", "Cox's Bazar", "Rangamati"), "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 
-    for number in numbers:
-        if is_prime(number):
-            print(f"{number} is a prime number.")
-        else:
-            print(f"{number} is not a prime number.")
 
-# Example list
-a = [5, 21, 11, 7, 29, 39, 51, 57, 83, 81]
 
-# Check primes in the list
-check_primes_in_list(a)
+inpute_value = input("Given a name which one index you want to know? :") ## If give :Rajshahi Else If give :Cox's Bazar
+
+index_no = []
+
+for d_index, d in enumerate(divisions):
+
+    if type(d) is list:
+        for c_index, city in enumerate(d):
+            if inpute_value == city:
+                index_no.extend([d_index, c_index])
+                break
+
+    elif type(d) is tuple:
+        for c_index, city in enumerate(d):
+            if inpute_value == city:
+                index_no.extend([d_index, c_index])
+                break
+            
+    else:
+        if inpute_value == d:
+            index_no.append(d_index)
+            break
+
+
+print(index_no)
 

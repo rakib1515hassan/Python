@@ -331,8 +331,8 @@ divisions = [["Dhaka", "Savar", "Ghazipur"], "Khulna", "Sylhet", ["Chittagong", 
 #            [[                  ], "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal "]
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
 #               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
-#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
-#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
+#               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar",  (3,1)/(-8,-2)
+#               "Ghazipur" (0,2)/(-8,-1)                   "Rangamati",    (3,2)/(-8,-1)
 #            
 """
 
