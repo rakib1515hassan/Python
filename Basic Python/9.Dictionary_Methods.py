@@ -49,6 +49,14 @@ print(capital_city.items())
     ])
 """
 
+##? Person Information
+persone = {'name': 'Rakib', 'city': 'Dhaka', 'age': 28}
+
+print(persone.get('age'))
+print("Keys =",persone.keys())
+print("Values =",persone.values())
+print("Items =",persone.items())
+
 ##! ===========================================================================================
 ##! =============================(+  Nested Dictionary  +)=====================================
 

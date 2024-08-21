@@ -472,15 +472,57 @@ else:
 
        NOTE:- Nested List এর ক্ষত্রে এটা কাজ কোরবে না। সেই ক্ষেত্রে Menual নিয়মে কোরতে হবে।
 """
-
+##? Example 1:-
 divisions = ["Dhaka", "Khulna", "Sylhet","Chittagong", "Dhaka", ["Saver", "Dhaka", "Ghazipur"], "Mymensingh", "Dhaka", "Sylhet"]
 
 elements = divisions.count("Sylhet")
-print("Total elements =", elements)  ## Result = `Total elements = 3`
+print("Total elements =", elements)  ## Result = `Total elements = 2`
 
 
 elements = divisions.count("Dhaka") ##! `Dhaka` মোট 4 বার আছে, কিন্তু এখানে 3 বার দেখবে। Nested List কাজ কোরবে না।
 print("Total elements =", elements)  ## Result = `Total elements = 3`
+
+
+##? Example 2:-
+divisions = [
+        "Dhaka", 
+        "Khulna", 
+        "Sylhet",
+        "Chittagong", 
+        "Dhaka", 
+        ["Saver", "Dhaka", "Ghazipur"], 
+        "Mymensingh", 
+        {"Dhaka", "Barisal"},
+        "Dhaka", 
+        "Sylhet", 
+        ("Chittagong",  "Dhaka", "Ghazipur"),
+        {
+            "city" : "Dhaka", 
+            "town" : "Dhanmondi"
+        }
+    ]
+
+search_value = "Dhaka"
+
+count = 0
+
+for division in divisions:
+    if (type(division) == list) or (type(division) == tuple) or (type(division) == set):
+        for city in division:
+            if city == search_value:
+                count += 1
+
+    if type(division) == dict:
+        for c in division.values():
+            if c == search_value:
+                count += 1
+
+    if division == search_value:
+        count += 1
+
+print(count)   ## 7
+
+
 
 
 ##! Nested List এর ক্ষত্রে এটি বের করার জন্যে আমাদের Munually করতে হবে।

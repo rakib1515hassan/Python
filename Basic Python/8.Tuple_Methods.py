@@ -70,9 +70,9 @@ print("Type of `a` =", type(a)) ## Type of `a` = <class 'tuple'>
 ##* Index           0                   1         2              3                     4         5           6           7
 #            ((                  ), "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal")
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",  (3,0)/(-8,-3)       
 #               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
-#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
+#               "Ghazipur" (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
 #            
 """
 print("\n\n")
@@ -244,10 +244,10 @@ else:
 
 
 
-##? Method 2: --------------( Del, Remove, Pop, Clear Methods)-------------------------
+##? Method 2: --------------( Del, Remove, Pop, Clear Methods )-------------------------
 ##? Delete Value Item
 
-fruits = ['Apple', 'Banana', 'Orange', 'Grapes', 'Guava', 'Watermelon', 'Pineapple']
+fruits = ('Apple', 'Banana', 'Orange', 'Grapes', 'Guava', 'Watermelon', 'Pineapple')
 
 temp_list = list(fruits)
 
@@ -345,9 +345,9 @@ divisions = (("Dhaka", "Savar", "Ghazipur"), "Khulna", "Sylhet", ["Chittagong", 
 ##* Index           0                   1         2              3                     4         5           6           7
 #            ((                  ), "Khulna", "Sylhet", [                      ], "Rajshahi", "Rangpur", "Mymensingh", "Barishal")
 ##! Index          -8                  -7        -6             -5                    -4        -3          -2          -1
-#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",   (3,0)/(-8,-3)       
+#               "Dhaka",   (0,0)/(-8,-3)                   "Chittagong",  (3,0)/(-8,-3)       
 #               "Savar",   (0,1)/(-8,-2)                   "Cox's Bazar", (3,1)/(-8,-2)
-#               "Ghazipur"  (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
+#               "Ghazipur" (0,2)/(-8,-1)                   "Rangamati",   (3,2)/(-8,-1)
 #            
 """
 
