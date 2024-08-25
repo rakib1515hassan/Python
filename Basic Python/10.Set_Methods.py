@@ -10,7 +10,7 @@
     *) Set কে Print করলে এর ভেতরের Value গুলো এলোমেলো ভাবে আসতে পারে, index ঠিক থাকবে না।
     *) যদি আমরা Duplicate Value Set এর ভেতর দিয়ে দেই, তবে তা Print করলে পাব না, কারন তা Save হবে না।
     *) Set এর ভেতর সব ধরনের Data Type রাখা যায় না।
-    *) Set এর ভেতর Items Index হেসে বে থাকে না।
+    *) Set এর ভেতর Items Index হিসেবে থাকে না।
 """
 
 ##! Generally we define Set like this:-  ========================================================
@@ -46,7 +46,7 @@ person = {
     27,    ## Set এর ভেতর Duplicates দিলেও তা Print এ পাওয়া যাবে না। কারন তা Sore হয়নি।
 }
 
-# print(person) 
+print(person) 
 """Print Result =
 {
     ('Cricket', 'Football'), 
