@@ -156,7 +156,7 @@ print(fruits)  ## Result = `{'Pianapple', 'Apple', 'Banana', 'Guava'}`
 
 
 ##? Pop Method:- 
-## Set এর pop() Method এর ভেতর কোন Argument দেয়া যায় না, Bydefault Rendomly last হেতে যে কাউকে Delete করে দেয়।
+## Set এর pop() Method এর ভেতর কোন Argument দেয়া যায় না, Bydefault Rendomly set হেতে যে কাউকে Delete করে দেয়।
 fruits.pop()
 print(fruits)  
 
@@ -164,8 +164,8 @@ print(fruits)
 ##? Pop Method:- 
 ## Set হতে কোন Element কে Delete করতে চাইলে discard() Method টি আমরা Use কোরবো,
 """NOTE:- 
-=> এটি remove() এর মত তবে, পার্থক্য হলঃ remove() এর বেতর যদি এমন কোন Value দেয়া হয় যা 
-   ঐ Set এ নেই তাহলে সে `KeyError` দেয়, কিন্তু discard() তা না দিয়ে Full set কে Return করে।
+=> এটি remove() এর মত তবে, পার্থক্য হলঃ remove() এর ভেতর যদি এমন কোন Value দেয়া হয় যা 
+   ঐ Set এ নেই, তাহলে সে `KeyError` দেয়, কিন্তু discard() তা না দিয়ে Full set কে Return করে।
 """
 fruits.discard("Pianapple")
 print(fruits)  

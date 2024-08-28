@@ -20,8 +20,11 @@ def summation():
     b = 12
     print(a + b)
 
+
 ## Now call this function
 summation()
+
+
 
 
 ##? Example 2:- If a function `return`,
@@ -29,6 +32,7 @@ summation()
 def summation():
     a = 10
     b = 12
+    print(a + b)
     return a + b
 
 ## Now call this function
