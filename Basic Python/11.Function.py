@@ -252,6 +252,60 @@ person_info("Md Rakib Hassan", "01515612682", "rakib1515hassan@gmail.com")
         3) rakib1515hassan@gmail.com
 """
 
+##? Example 4:-
+def summation(*args):
+    my_tuple = args
+    s = 0
+
+    for i in my_tuple:
+        s += i
+
+    return s
+
+
+result = summation(40, 50, 20, 5, 45)
+print(result)
+
+##? Example 5:-
+def summation(*args):
+    my_tuple = args
+    s = 0
+
+    for i in my_tuple:
+        s += i
+    
+    return s
+
+def avgrage(*args):
+    subjects = args
+
+    s = 0
+    for subject in subjects:
+        s += subject
+
+    l = len(subjects)
+
+    r = s/l
+
+    return r
+
+"""
+                  bangla + math + english + physics + chemistry
+    avgrage =  __________________________________________________
+                                    5
+"""
+
+bangla  = summation(80, 60, 50, 56, 45, 49, 65)
+math    = summation(60, 59, 23, 50, 59)
+english = summation(81, 65, 75, 85, 91, 69, 75, 12)
+
+physics = summation(85, 52, 56, 35, 67)
+chemistry = summation(44, 51, 53, 75, 69, 73)
+
+avg = avgrage(bangla, math, english, physics, chemistry)  ## 373.8
+
+print(avg)
+
 
 ##! ---------------------------------------------------------------------------------
 ##! -------------------------( **kwargs in Function )--------------------------------
@@ -320,6 +374,48 @@ for k, v in result.items():
     author : Md Rakib Hassan
 """
 
+##? Example 4:-
+def profile(**kwargs):
+
+    data = kwargs
+    print(data)
+
+p = {
+    "name": "rakib",
+    "id": 162,
+    "group": "A",
+    "city": "Dhaka"
+}
+
+profile(**p)
+
+
+##? Example 5:-
+def profile(a, b, *args, **kwargs):
+
+    tuple_date = args
+    dic_data = kwargs
+
+    print(a)
+    print(b)
+    print(tuple_date)
+    print(dic_data)
+
+
+## Main function
+p = {
+    "name": "rakib",
+    "id": 162,
+    "group": "A",
+    "city": "Dhaka"
+}
+
+n = (5, 6, 7, 9)
+
+a = "Bangladesh"
+b = "United States"
+
+profile(a, b, *n, **p)
 
 
 ##! ---------------------------------------------------------------------------------
@@ -418,9 +514,7 @@ print("Customer 4 buy ", customer_4) ## Customer 4 buy  Mango in Klulna = 85
 
 
 
-
 ##? Example 3:-
-
 def BangladeshShop(amount ,city=None):
     mango = amount
     price = amount
