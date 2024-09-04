@@ -468,19 +468,19 @@ calculator( num_1 = n_1, operator = ope, num_2 = n_2 ) ## 5.0 + 7.0 = 12.0
 ##? Example 2:-
 
 def BangladeshShop(city=None):
-    mango = 100
+    mango = 5
     price = 100
 
     def Rajshi():
-        p = mango - 20
+        p = price - 20
         return p
 
     def Dhaka():
-        p = mango + 5
+        p = price + 5
         return p
 
     def Khulna():
-        p = mango - 15
+        p = price - 15
         return p
 
     ## Nested Function Call
@@ -780,7 +780,9 @@ for i in digit():
 def n_th(first_value, second_value ,n_value):
     diff = (second_value - first_value)
 
-    return ( (n_value - first_value + diff) / diff )
+    result = ( (n_value - first_value + diff) / diff )
+
+    return result
 
 a = 5
 b = 8

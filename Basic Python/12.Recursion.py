@@ -14,9 +14,52 @@ for i in range(n):
     result += result * (n-1)
     n -= 1
 
+"""
+    step 0: r = 1   * 5 = 5   , r = 5 ,  n = 4
+    step 1: r = 5   * 4 = 20  , r = 20,  n = 3
+    step 2: r = 20  * 3 = 60  , r = 60,  n = 2
+    step 3: r = 60  * 2 = 120 , r = 120, n = 1
+    step 4: r = 120 * 1 = 120 , r = 120, n = 0
+"""
+
 print(result) ## Result = `120`
 
+##? Without Recursive
+n = 5
+r = 1
+            
+for i in range(1, n+1, 1):              
+    r = r * i           
 
+"""
+    step 1: r = 1   * 1 = 1   , r = 1 
+    step 2: r = 1   * 2 = 2   , r = 2
+    step 3: r = 2   * 3 = 6   , r = 6 
+    step 4: r = 6   * 4 = 24  , r = 24
+    step 5: r = 24  * 5 = 120 , r = 120
+"""
+
+"""
+    5! = 1 * 2 * 3 * 4 * 5 = 120
+    5! = 5 * 4 * 3 * 2 * 1 = 120
+"""
+
+##? Without Recursive
+n = 5
+r = 1
+            
+for i in range(n, 0, -1):              
+    r = r * i
+
+print(r)
+
+"""
+    step 0: r = 1   * 5 = 5   , r = 5 ,  n = 4
+    step 1  r = 5   * 4 = 20  , r = 20,  n = 3
+    step 2: r = 20  * 3 = 60  , r = 60,  n = 2
+    step 3: r = 60  * 2 = 120 , r = 120, n = 1
+    step 4: r = 120 * 1 = 120 , r = 120, n = 0
+"""
 
 ##? Without Recursive Functions 
 def Factorial(n):
@@ -34,32 +77,48 @@ user_inpute = int(input("Given a number :")) ## If given :5
 result = Factorial(user_inpute)
 print(result) ## Result = `120`
 
+##? With Function
+def Factorial(x):
+    r = 1
+    for i in range(x, 0, -1):              
+        r = r * i
+
+    return r
+
+
+n = int(input("Enter a integer number :"))
+
+result = Factorial(n)
+
+print("Result = ", result)
+
 
 
 ##? Using Recursive Functions
-def Factorial(n):
-    if n == 1:
+def Factorial(x):
+    if (x == 1) or (x == 0):
         return 1
     else:
-        return n * Factorial(n - 1)
+        return x * Factorial(x - 1)
+
+""" If x = 5
+    Return : x * Factorial( x - 1 )
+    Step 1 : 5 * Factorial( 4 )     returns : pending
+    Step 2 : 4 * Factorial( 3 )     returns : pending
+    Step 3 : 3 * Factorial( 2 )     returns : pending 
+    Step 4 : 2 * Factorial( 1 )  => return 5 যেহেতু Factorial( 1 ) = 1 তাই 2 * 1 = 2
+
     
-user_inpute = int(input("Given a number :")) ## If given :5
-result = Factorial(user_inpute)
-print(result)  ## Result = `120`
-
-""" If n = 5
-    Return :  n   * Factorial( n - 1 )
-    Step 1 :  5   * Factorial( 4 )  
-    Step 2 :  4   * Factorial( 3 )  
-    Step 3 :  3   * Factorial( 2 )  
-    Step 4 :  2   * Factorial( 1 )  => return 5 যেহেতু Factorial( 1 ) = 1 তাই 2 * 1 = 2
-
-
     Back   :
-    Step 3 :  3 * 2    => return 6
-    Step 2 :  4 * 6    => return 24
-    Step 1 :  5 * 24   => return 120
+    Step 3 : 3 * 2    => Factorial( 2 ) = 2  ,  return 6
+    Step 2 : 4 * 6    => Factorial( 3 ) = 6  ,  return 24
+    Step 1 : 5 * 24   => Factorial( 4 ) = 24 , return 120
 """
+
+##--------------------------------------------------
+n = int(input("Enter a integer number :"))  ## 5
+result = Factorial(n)
+print("Result = ", result)
 
 
 ##! Example 2: Power of X ======================================================
