@@ -23,6 +23,22 @@ data = [2, 3, 4, 6]              ##NOTE:- You can send list/tuple anything
 result = list(map(square, data)) ##NOTE:- You can receive list/tuple anything     
 print(result)   ## [4, 9, 16, 36]
 
+
+##? Example 1.1:-
+def square(x):          
+    return x * x        
+
+
+data = [2, 3, 4, 6] 
+
+result = list(map(square , [2, 3, 4, 6] )) 
+result = list(map(square, data)) 
+result = list(map(lambda x: x*x , data)) 
+result = list(map(lambda x: x*x , [2, 3, 4, 6] )) 
+
+print(result)  # [4, 9, 16, 36]
+
+
 ##?  Example 2:-            
 def square(x):          
     return x * x        

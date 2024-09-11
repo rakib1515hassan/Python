@@ -59,6 +59,12 @@ print("Result 3 = ",result3)  ## Result 3 =  25
 print("Result 4 = ",result4)  ## Result 4 =  30 
 
 
+result = lambda x, y=10 : x * y 
+
+print("result1 =", result(5))
+print("result2 =", result(8))
+print("result3 =", result(9))
+print("result4 =", result(4))
 
 ##? Example 3:-
 #* Question => a^2 + 2ab + b^2
