@@ -133,7 +133,7 @@ print("Result = ", result)
 """
 
 ##? Without Recursive Functions
-base = int(input("Enter base number :"))
+base = int(input("Enter base number :"))  
 
 powRaised = int(input("Enter power number(positive integer) :"))
 
