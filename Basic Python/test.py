@@ -1,8 +1,18 @@
-name = ["Rakib", "Hassan", "Jarray"]
-roll = [1001, 1002, 1003]
-age  = [24, 26, 28]
+def abc(f):
+    def xyz(name):
+        y = f(name.upper())
+        return y
+    
+    return xyz
 
 
-info = list(zip(roll, name, age))
 
-print(info)
+
+@abc
+def MyName(name):
+    print(f"My name is : {name}")
+
+
+
+name_inpute = input("Given you name :") 
+MyName(name_inpute)   
